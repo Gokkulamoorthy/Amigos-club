@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Rajdhani, Orbitron } from "next/font/google";
+import { GeistSans } from 'next/font/geist';
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import { Providers } from "./providers";
@@ -15,6 +16,11 @@ const orbitron = Orbitron({
   variable: "--font-cyber",
 });
 
+const geist = GeistSans({
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+});
+
 export const metadata: Metadata = {
   title: "AMIGOS - Amrita Intelligent Gaming and Opti-verse Sports Club",
   description: "Experience the future of gaming and technology at AMIGOS.",
@@ -26,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${rajdhani.variable} ${orbitron.variable}`}>
+    <html lang="en" className={`${rajdhani.variable} ${orbitron.variable} ${geist.variable}`}>
       <body className="font-gaming bg-cyber-black text-white antialiased overflow-x-hidden min-h-screen">
         <Providers>
           {/* Background Effects Layer */}

@@ -6,6 +6,9 @@
   :root {
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
+    --font-sans: var(--font-geist-sans);
+    --font-gaming: var(--font-gaming);
+    --font-cyber: var(--font-cyber);
   }
 
   body {
