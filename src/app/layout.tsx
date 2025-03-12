@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Rajdhani, Orbitron } from "next/font/google";
-import { GeistSans } from 'next/font/geist';
+import { Rajdhani, Orbitron, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import { Providers } from "./providers";
@@ -16,9 +15,9 @@ const orbitron = Orbitron({
   variable: "--font-cyber",
 });
 
-const geist = GeistSans({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -32,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${rajdhani.variable} ${orbitron.variable} ${geist.variable}`}>
+    <html lang="en" className={`${rajdhani.variable} ${orbitron.variable} ${inter.variable}`}>
       <body className="font-gaming bg-cyber-black text-white antialiased overflow-x-hidden min-h-screen">
         <Providers>
           {/* Background Effects Layer */}
