@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
-import { Rajdhani, Orbitron, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import { Providers } from "./providers";
-
-const rajdhani = Rajdhani({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-gaming",
-});
-
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  variable: "--font-cyber",
-});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${rajdhani.variable} ${orbitron.variable} ${inter.variable}`}>
-      <body className="font-gaming bg-cyber-black text-white antialiased overflow-x-hidden min-h-screen">
+    <html lang="en" className={inter.variable}>
+      <body className="font-sans bg-cyber-black text-white antialiased overflow-x-hidden min-h-screen">
         <Providers>
           {/* Background Effects Layer */}
           <div className="fixed inset-0 pointer-events-none">
