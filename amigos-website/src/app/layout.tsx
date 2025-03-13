@@ -99,7 +99,7 @@ export default function RootLayout({
           <div className="relative z-10">
             <Navbar />
             <main className="relative min-h-[calc(100vh-4rem)]">
-              {children}
+        {children}
             </main>
           </div>
 
