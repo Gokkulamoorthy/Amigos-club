@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import { Providers } from "./providers";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-sans",
-});
 
 export const metadata: Metadata = {
   title: "AMIGOS - Amrita Intelligent Gaming and Opti-verse Sports Club",
@@ -21,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="font-sans bg-cyber-black text-white antialiased overflow-x-hidden min-h-screen">
         <Providers>
           {/* Background Effects Layer */}
@@ -99,7 +94,7 @@ export default function RootLayout({
           <div className="relative z-10">
             <Navbar />
             <main className="relative min-h-[calc(100vh-4rem)]">
-        {children}
+              {children}
             </main>
           </div>
 
