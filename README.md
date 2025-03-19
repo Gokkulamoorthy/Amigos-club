@@ -32,7 +32,7 @@ A modern website for the Amigos Game Development Club, built with Next.js, TypeS
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/amigos-website.git
+   git clone https://github.com/Gokkulamoorthy/amigos-website.git
    cd amigos-website
    ```
 
@@ -89,4 +89,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
 
+<<<<<<< HEAD
 Project Link: [https://github.com/Gokkulamoorthy/Amigos-club](https://github.com/Gokkulamoorthy/Amigos-club) 
+=======
+Project Link: [https://github.com/Gokkulamoorthy/amigos-website](https://github.com/Gokkulamoorthy/amigos-website) 
+>>>>>>> 6012cdf (chore: update package files and migrations)
