@@ -89,4 +89,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
 
-Project Link: [https://github.com/yourusername/amigos-website](https://github.com/yourusername/amigos-website) 
+Project Link: [https://github.com/Gokkulamoorthy/Amigos-club](https://github.com/Gokkulamoorthy/Amigos-club) 
